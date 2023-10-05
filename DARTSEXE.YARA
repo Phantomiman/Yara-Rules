@@ -7,7 +7,7 @@ $magic = { 4D 5A ?? }
 $filename = “DARTS.EXE” wide
 $str = “Office.com DARTS” fullword/wide/ascii/nocase
 $regex = .*darts.*
-Condition:
+condition:
 ($magic at 0 and $filename) or any of $regex or $str
 }
 Rule bytebased {
